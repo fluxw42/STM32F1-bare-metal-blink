@@ -39,6 +39,7 @@ $(NAME).elf: $(NAME).c $(STARTUP)
 	$(CC) $^ $(CFLAGS) $(LFLAGS) -o $@
 
 flash: $(NAME).bin
+	st-flash erase
 	st-flash write $(NAME).bin 0x08000000
 
 clean: 

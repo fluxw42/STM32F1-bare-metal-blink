@@ -15,10 +15,6 @@ void SystemInit(void) {
 	GPIOC_CRH = gpioc_config;
 }
 
-void sleep(volatile unsigned long delay) {
-	while(--delay);
-}
-
 void main(void) {
 	volatile unsigned long i;
 	while(1) {

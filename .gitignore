@@ -3,3 +3,6 @@
 *.hex
 *.bin
 *.o
+.idea
+cmake*
+CMake*
